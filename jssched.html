@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Class Schedule</titke>
+	</head>
+	<body>
+		<script>
+
+
+
+function Student(id,name) {
+	this.id=id;
+	this.name=name;
+}
+
+
+
+function Subject(code,desc) {
+	this.code=code;
+	this.description=description;
+}
+
+
+
+function Time(dayOfWeek,hour,minute) {
+	this.dayOfWeek=dayOfWeek;
+	this.hour=hour;
+	this.minute=minute;
+}
+
+
+
+function Schedule(id,subject,times) {
+	this.student=students[id];
+	this.subject=subjects[subject];
+	this.times=times;
+}
+
+
+
+
+
+
+
+
+var students={
+	"I2200": new Student("I2200","Phoebe"),
+	"I2201": new Student("I2201","Kristan"),
+	"I2202": new Student("I2202","Venn"),
+	"I2203": new Student("I2203","Shi"),
+	"I2204": new Student("I2204","Xee"),
+	"I2205": new Student("I2205","Rachel"),
+	"I2206": new Student("I2206","Itami"),
+	"I2207": new Student("I2207","Lyzel"),
+	"I2208": new Student("I2208","Kenneth"),
+	"I2209": new Student("I2209","Ferd"),
+	"I2210": new Student("I2210","Timothy"),
+	"I2211": new Student("I2211","Yner"),
+	"I2212": new Student("I2212","John"),
+	"I2213": new Student("I2213","Johnben"),
+	"I2214": new Student("I2214","Ry"),
+	"I2215": new Student("I2215","Marlon"),
+};
+
+
+
+var subjects = {
+	
+	"C": 				new Subject("C", "C Language Programming"),
+	
+	"CPP": 			new Subject("CPP", "CPP Programming"),	
+	
+	"JAVA": 		new Subject("JAVA", "Java Programming"),	
+	
+	"PYTHON": 	new Subject("PYTHON", "Python Programming"),	
+	
+	"CSHARP": 	new Subject("CSHARP", "C# Programming"),	
+	
+	"VB": 			new Subject("VB", "Visual Basic Programming"),	
+	
+	"WEBTECH": 	new Subject("WEBTECH","Web Technologies (HTML,CSS,Javascript,PHP,MariaDB)"),	
+	
+	"DSALGO": 	new Subject("DSALGO","Data Structures and Algorithms"),	
+	
+	"LINUX": 		new Subject("LINUX","Linux Operating System"),
+
+};
+
+
+
+var schedules = [
+
+	new Schedule("I2202","DSALGO",[
+		new Time(0,21,00,23,00)
+	]),
+
+	new Schedule("I2203","CPP",[
+		new Time(3,10,30,12,00)
+	]),
+
+	new Schedule("I2203","WEBTECH",[
+		new Time(6,13,00,15,00)
+	]),
+	
+	new Schedule("I2204","JAVA",[
+		new Time(0,10,00,12,00)
+	]),
+	
+	new Schedule("I2205","CPP",[
+		new Time(6,10,00,12,00)
+	]),
+	
+	new Schedule("I2205","JAVA",[
+		new Time(0,16,00,18,00)
+	]),
+	
+	new Schedule("I2206","LINUX",[
+		new Time(1,10,00,12,00)
+	]),
+	
+	new Schedule("I2206","CPP",[
+		new Time(1,14,00,16,00),
+		new Time(3,14,00,16,00),
+		new Time(5,14,00,16,00)
+	]),
+	
+	new Schedule("I2206","WEBTECH",[
+		new Time(1,20,00,22,00)
+	]),
+	
+	new Schedule("I2207","PYTHON",[
+		new Time(6,21,00,23,00)
+	]),
+	
+	new Schedule("I2209","C",[
+		new Time(1,07,00,10,00),
+		new Time(4,07,00,10,00)
+	]),
+	
+	new Schedule("I2209","JAVA",[
+		new Time(2,07,00,10,00),
+		new Time(5,07,00,10,00)
+	]),
+	
+	new Schedule("I2209","PYTHON",[
+		new Time(3,07,00,10,00),
+		new Time(6,07,00,10,00),
+	]),
+
+	new Schedule("I2210","CPP",[
+		new Time(2,20,00,22,00),
+		new Time(3,20,00,21,00)
+	]),
+	
+	new Schedule("I2211","WEBTECH",[
+		new Time(4,10,00,12,00),
+		new Time(5,10,00,12,00)
+	]),
+	
+	new Schedule("I2212","PYTHON",[
+		new Time(6,09,00,10,00)
+	]),
+	
+	new Schedule("I2213","DSALGO",[
+		new Time(4,17,00,18,00)
+	]),
+	
+	new Schedule("I2214","CPP",[
+		new Time(6,20,00,21,00)
+	]),
+	
+	new Schedule("I2214","CSHARP",[
+		new Time(0,20,00,21,00)
+	]),
+	
+	new Schedule("I2215","WEBTECH",[
+		new Time(3,21,00,22,00),
+		new Time(4,21,00,22,00),
+		new Time(5,21,00,22,00)
+	]),
+
+];
+
+
+
+		</script>
+	</body>
+</html>
+
+

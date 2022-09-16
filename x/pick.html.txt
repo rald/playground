@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	
+	<head>
+		
+		<title>POCS - Color Picker</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+		
+			#color {
+				width: 128px;
+				height: 128px;
+			}
+			
+			#text {
+				font-family: monospace;
+				font-size: 32px;
+				height: 128px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<table>
+			<tr>
+				<td><input id="color" type="color" onchange="pick()"></td>
+				<td><input id="text" type="text" size="7"></td>
+			</tr>
+		</table>
+
+
+
+<script>
+	
+	var color=document.getElementById("color");
+	var text=document.getElementById("text");
+	
+	function pick() {
+		text.value=color.value.toUpperCase();
+	}
+	
+	pick();
+	
+</script>
+
+
+
+	</body>
+	
+</html>
